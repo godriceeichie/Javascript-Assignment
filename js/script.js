@@ -1,3 +1,2 @@
-var saying = 'Home sweet home ';
-var msg = '<h2>length</h2><p>' + saying.length + '</p>'
-document.write(msg)
+let date = new Date(2006, 07, 02, 01, 59, 30);
+console.log(date);
