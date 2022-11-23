@@ -76,6 +76,42 @@ let length = foods.length - 1
 // foods.forEach((food, index) => console.log(index, food))
 
 //Using for in
-for(let item in foods){
-    console.log(foods[item])
+// for(let item in foods){
+//     console.log(foods[item])
+// }
+
+// How to copy array
+const soccer = ["Messi", "Ronaldo", "Benzema", "Modric"];
+const club = ["Chelsea", "Real Madrid", "PSG"];
+let copy = [];
+// copy = [...soccer, ...club];
+// console.log(copy);
+
+// for(let soc of soccer){
+//     if(soc.startsWith("M"))
+//     copy.push(soc)
+    
+// }
+// console.log(copy);
+
+// copy = club.slice(0);
+// console.log(copy)
+
+// let len = club.length
+// for(i = 0; i < len; i++){
+//     copy.push(club[i]);
+// }
+// console.log(copy);
+
+let array = [
+    {name: 'Godrice', age: 16, gender: 'female'}, 
+    {name: 'Samuel', age: 17, gender: 'male'},
+    {name: 'Victoria', age: 24, gender: 'female'},
+    {name: 'Lesley', age: 10, gender: 'male'}
+]
+let sex;
+function getGender(gender, age){
+    sex = array.filter(user=>user.gender === gender && user.age>=age)
+    return sex
 }
+console.log(getGender('female', 16));
