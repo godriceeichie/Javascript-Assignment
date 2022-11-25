@@ -103,15 +103,22 @@ let copy = [];
 // }
 // console.log(copy);
 
-let array = [
-    {name: 'Godrice', age: 16, gender: 'female'}, 
-    {name: 'Samuel', age: 17, gender: 'male'},
-    {name: 'Victoria', age: 24, gender: 'female'},
-    {name: 'Lesley', age: 10, gender: 'male'}
-]
-let sex;
-function getGender(gender, age){
-    sex = array.filter(user=>user.gender === gender && user.age>=age)
-    return sex
-}
-console.log(getGender('female', 16));
+// let array = [
+//     {name: 'Godrice', age: 16, gender: 'female'}, 
+//     {name: 'Samuel', age: 17, gender: 'male'},
+//     {name: 'Victoria', age: 24, gender: 'female'},
+//     {name: 'Lesley', age: 10, gender: 'male'}
+// ]
+// let sex;
+// function getGender(gender, age){
+//     sex = array.filter(user=>user.gender === gender && user.age>=age)
+//     return sex
+// }
+// console.log(getGender('female', 16));
+
+//A map is a higher level function where you can map the element of an array to an array
+// const numbers = [1, 4, 6, -3, 8, -2, 20]
+// const filtered = numbers.filter(element => element > 0)
+// console.log(filtered);
+
+.303

@@ -1,13 +1,15 @@
-function getLongestWord(sentence){
-    let word = sentence.split(" ");
-    let result;
-    let final = [];
-    for(i = 0; i < word.length; i++){
-        let item = word[i].length;
-        final.push(item)
-        result = Math.max(final)
+function getLongestWord(array){
+    let length = [];
+    let result = []
+    for(i = 0; i < array.length; i++){
+        let item1 = array[i];
+        length.push(item1.length)
     }
-    console.log(result);
+    for(item of array){
+        if(Math.max(...length) === item.length){
+            result.push(item)
+        }
+    }
+    console.log(result.join(" "));
 }
-
-getLongestWord("Felix is his name");
+getLongestWord(['Gaadi', 'Blessing', 'Oseremen'])
